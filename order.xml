@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<order>
+    <customer>
+        <address>
+            <address1>Singapore expo lane 1, Changi</address1>
+            <address2>ABC Building Old ABC building near carpark</address2>
+            <country>Singapore</country>
+            <postalCode>123456</postalCode>
+        </address>
+        <age>25</age>
+        <email>jw@gmail.com</email>
+        <firstName>Jim</firstName>
+        <isVIP>true</isVIP>
+        <lastName>Whitehurst</lastName>
+    </customer>
+    <delivery>
+        <deliveryAddress>
+            <address1>Singapore expo lane 1, Changi</address1>
+            <address2>ABC Building Old ABC building near carpark</address2>
+            <country>Singapore</country>
+            <postalCode>123456</postalCode>
+        </deliveryAddress>
+        <deliveryDate>2021-02-13T17:44:37.534+08:00</deliveryDate>
+        <remarks>Call before Delivery This is a very long remarks which does nothing but to take up some space so that the pay load can be bigger than it was</remarks>
+    </delivery>
+    <id></id>
+    <orderId>ord00001</orderId>
+    <orderItems>
+        <orderItemId>item00001</orderItemId>
+        <product>
+            <description>The Apple M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>apple watch</name>
+            <price>1000.0</price>
+            <productId>p111111</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>500</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00002</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00003</orderItemId>
+        <product>
+            <description>The PineApple M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>MacBook Pro</name>
+            <price>1000.0</price>
+            <productId>p33333</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>2000</qty>
+    </orderItems>
+    <payment>
+        <billingAddress>
+            <address1>Singapore expo lane 1, Changi</address1>
+            <address2>ABC Building Old ABC building near carpark</address2>
+            <country>Singapore</country>
+            <postalCode>123456</postalCode>
+        </billingAddress>
+        <paymentType>Card</paymentType>
+        <remarks>Super long remarks just say something useless here, testing 123 This is a very long remarks which does nothing but to take up some space so that the pay load can be bigger than it was</remarks>
+    </payment>
+</order>

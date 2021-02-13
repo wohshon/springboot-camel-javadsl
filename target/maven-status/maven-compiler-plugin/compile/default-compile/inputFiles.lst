@@ -1,0 +1,10 @@
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/entities/Product.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/MyRouteBuilder.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/entities/Order.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/entities/Payment.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/entities/Address.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/entities/OrderItem.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/entities/Delivery.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/Application.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/entities/Customer.java
+/home/virtuser/apps/fuse-perf-test/src/main/java/com/redhat/MyTransformer.java

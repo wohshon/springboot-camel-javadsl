@@ -1,0 +1,136 @@
+{
+	"BusMsg": {
+		"AppHdr": {
+			"Fr": {
+				"FIId": {
+					"FinInstnId": {
+						"Othr": {
+							"Id": "AAAAAAAA"
+						}
+					}
+				}
+			},
+			"To": {
+				"FIId": {
+					"FinInstnId": {
+						"Othr": {
+							"Id": "BBBBBBBB"
+						}
+					}
+				}
+			},
+			"BizMsgIdr": "20190816AAAAAAAA010ORB55000003",
+			"MsgDefIdr": "pacs.008.001.06",
+			"BizSvc": "RPP",
+			"CreDt": "2019-08-16T06:38:07Z",
+			"PssblDplct": "false"
+		},
+		"Document": {
+			"FIToFICstmrCdtTrf": {
+				"GrpHdr": {
+					"MsgId": "20190816AAAAAAAA01055000003",
+					"CreDtTm": "2019-08-16T14:38:07.000",
+					"NbOfTxs": "1",
+					"SttlmInf": {
+						"SttlmMtd": "CLRG"
+					}
+				},
+				"CdtTrfTxInf": {
+					"PmtId": {
+						"EndToEndId": "20190816AAAAAAAA010ORB55000003",
+						"TxId": "20190816AAAAAAAA01055000003"
+					},
+					"PmtTpInf": {
+						"CtgyPurp": {
+							"Prtry": "CASH"
+						}
+					},
+					"IntrBkSttlmAmt": {
+						"_Ccy": "MYR",
+						"__text": "10"
+					},
+					"ChrgBr": "DEBT",
+					"InstgAgt": {
+						"FinInstnId": {
+							"PstlAdr": {
+								"StrtNm": "Street Name",
+								"TwnNm": "Town Name",
+								"CtrySubDvsn": "MY",
+								"Ctry": "MY"
+							},
+							"Othr": {
+								"Id": "AAAAAAAA"
+							}
+						}
+					},
+					"Dbtr": {
+						"Nm": "Debtor Name"
+					},
+					"DbtrAcct": {
+						"Id": {
+							"Othr": {
+								"Id": "1110000111"
+							}
+						},
+						"Tp": {
+							"Prtry": "SVGS"
+						}
+					},
+					"DbtrAgt": {
+						"FinInstnId": {
+							"Othr": {
+								"Id": "AAAAAAAA"
+							}
+						}
+					},
+					"CdtrAgt": {
+						"FinInstnId": {
+							"Othr": {
+								"Id": "BBBBBBBB"
+							}
+						}
+					},
+					"Cdtr": {
+						"Nm": "Creditor Name"
+					},
+					"CdtrAcct": {
+						"Id": {
+							"Othr": {
+								"Id": "1234567890"
+							}
+						},
+						"Tp": {
+							"Prtry": "LOAN"
+						}
+					},
+					"SplmtryData": {
+						"PlcAndNm": "Place and name",
+						"Envlp": {
+							"InstrForCdtrAgt": {
+								"RecptRef": "123456789012",
+								"PaymntDesc": "FT",
+								"ScndValInd": "N",
+								"IdTp": "01",
+								"Id": "123456789012"
+							},
+							"InstrForDbtrAcct": {
+								"RsdntSts": "1",
+								"PrdTp": "C",
+								"ShariaCmpl": "N",
+								"Dtls": "1"
+							},
+							"Dbtr": {
+								"IPAddr": "127.0.0.1",
+								"Id": "99999"
+							},
+							"CdtTrfTxInf": {
+								"URL": "URL"
+							},
+							"PrxyLkUpRef": "20190816AAAAAAAA010ORB55000003"
+						}
+					}
+				}
+			}
+		}
+	}
+}

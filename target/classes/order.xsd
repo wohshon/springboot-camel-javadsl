@@ -1,0 +1,87 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="customer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="address1"/>
+                    <xs:element type="xs:string" name="address2"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:int" name="postalCode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:byte" name="age"/>
+              <xs:element type="xs:string" name="email"/>
+              <xs:element type="xs:string" name="firstName"/>
+              <xs:element type="xs:string" name="isVIP"/>
+              <xs:element type="xs:string" name="lastName"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="delivery">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="deliveryAddress">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="address1"/>
+                    <xs:element type="xs:string" name="address2"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:int" name="postalCode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:dateTime" name="deliveryDate"/>
+              <xs:element type="xs:string" name="remarks"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="id"/>
+        <xs:element type="xs:string" name="orderId"/>
+        <xs:element name="orderItems" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="orderItemId"/>
+              <xs:element name="product">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:string" name="img"/>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:float" name="price"/>
+                    <xs:element type="xs:string" name="productId"/>
+                    <xs:element type="xs:string" name="shortDesc"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="qty"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="payment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="billingAddress">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="address1"/>
+                    <xs:element type="xs:string" name="address2"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:int" name="postalCode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="paymentType"/>
+              <xs:element type="xs:string" name="remarks"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
