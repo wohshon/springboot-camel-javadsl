@@ -38,17 +38,17 @@ public class MyTransformer {
 
 
     public void convertJson(Exchange ex) {
-        log.info("converting to json");
+        //log.info("converting to json");
         //log.info("converting to Json {}",ex.getIn().getBody());
         Gson gson = new Gson();
         String json = gson.toJson(ex.getIn().getBody());
-        log.info("json : {}",json);
+        //log.info("json : {}",json);
         ex.getOut().setBody(json);
         
     }
 
     public void request(Exchange ex) {
-        log.info("====================="+ex.getIn().getBody().toString());
+        //log.info("====================="+ex.getIn().getBody().toString());
         String input = ex.getIn().getBody().toString();
         //JsonObject jsonObject = JsonParser.parseString(input).getAsJsonObject();
         //log.info(" hello "+ jsonObject.get("hello"));
@@ -58,7 +58,7 @@ public class MyTransformer {
         prod.setShortDesc("THIS IS A SHORT DESCRIPTION OF "+prod.getName());
         prod.setPrice(prod.getPrice() + 500);
         prod.setImg("img/random.png");
-        log.info(prod.toString());
+        //log.info(prod.toString());
 
         ex.getOut().setBody(prod);
     }

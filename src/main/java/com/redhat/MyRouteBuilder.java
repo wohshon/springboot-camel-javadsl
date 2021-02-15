@@ -46,11 +46,11 @@ public class MyRouteBuilder extends RouteBuilder {
         .to("direct:spiltOrderItems","direct:order");
 
         from("direct:order")
-            .log("${body}")
-            .log("${header.id}")
+            //.log("${body}")
+            //.log("${header.id}")
             .unmarshal(jaxbDataFormat)
-            .log("....after unmarshalling: ${body}")
-            .log("....ID: ${body.getId}")
+            //.log("....after unmarshalling: ${body}")
+            //.log("....ID: ${body.getId}")
             //after unmarshalling, save to db
             .bean(MyTransformer.class,"convertJson");
 
@@ -60,10 +60,10 @@ public class MyRouteBuilder extends RouteBuilder {
             .to("direct:saveOrderItems");
 
         from("direct:saveOrderItems")
-            .log("----------------------------Item-----------------------")
-            .log("${body}")
+            //.log("----------------------------Item-----------------------")
+            //.log("${body}")
             .unmarshal(orderItemjaxbDataFormat)
-            .log("after......${body}")
+            //.log("after......${body}")
             .to("jpa:com.redhat.entities.OrderItem?usePersist=true");
 
      }
