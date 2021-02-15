@@ -62,7 +62,7 @@ public class MyRouteBuilder extends RouteBuilder {
         from("direct:saveOrderItems")
             //.log("----------------------------Item-----------------------")
             //.log("${body}")
-            .unmarshal(orderItemjaxbDataFormat)
+            .unmarshal(orderItemjaxbDataFormat);
             //.log("after......${body}")
            // .to("jpa:com.redhat.entities.OrderItem?usePersist=true");
 
