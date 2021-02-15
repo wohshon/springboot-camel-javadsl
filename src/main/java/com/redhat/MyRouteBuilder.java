@@ -1,5 +1,7 @@
 package com.redhat;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.xml.bind.JAXBContext;
 
 import com.redhat.entities.Order;
@@ -7,6 +9,7 @@ import com.redhat.entities.OrderItem;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.converter.jaxb.JaxbDataFormat;
+import org.apache.camel.spi.ThreadPoolProfile;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 @Component
@@ -14,6 +17,14 @@ public class MyRouteBuilder extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
+        ThreadPoolProfile poolProfile = new ThreadPoolProfile("masterPoolProfile");
+        poolProfile.setMaxPoolSize(100);
+        poolProfile.setMaxQueueSize(1000);
+        poolProfile.setPoolSize(50);
+        poolProfile.setKeepAliveTime(1L);
+        poolProfile.setTimeUnit(TimeUnit.MINUTES);
+        getContext().getExecutorServiceManager().setDefaultThreadPoolProfile(poolProfile);
+        
         restConfiguration().component("servlet");
         JAXBContext jaxbContext = JAXBContext.newInstance(Order.class);
         JAXBContext orderItemjaxbContext = JAXBContext.newInstance(OrderItem.class);
