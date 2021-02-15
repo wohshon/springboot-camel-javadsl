@@ -64,7 +64,7 @@ public class MyRouteBuilder extends RouteBuilder {
             //.log("${body}")
             .unmarshal(orderItemjaxbDataFormat)
             //.log("after......${body}")
-            .to("jpa:com.redhat.entities.OrderItem?usePersist=true");
+           // .to("jpa:com.redhat.entities.OrderItem?usePersist=true");
 
      }
 
