@@ -61,6 +61,90 @@
         </product>
         <qty>2000</qty>
     </orderItems>
+    <orderItems>
+        <orderItemId>item00004</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00005</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00006</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00007</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00008</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00009</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
+    <orderItems>
+        <orderItemId>item00010</orderItemId>
+        <product>
+            <description>The Orange M1 chip is here. Our first chip designed specifically for Mac</description>
+            <img>/images/product.png</img>
+            <name>IPhone 12</name>
+            <price>1000.0</price>
+            <productId>p22222</productId>
+            <shortDesc>Until now, a Mac needed multiple chips to deliver all of its features</shortDesc>
+        </product>
+        <qty>250</qty>
+    </orderItems>
     <payment>
         <billingAddress>
             <address1>Singapore expo lane 1, Changi</address1>
