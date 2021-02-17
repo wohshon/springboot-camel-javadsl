@@ -12,7 +12,7 @@ c new-app mysql -e MYSQL_PASSWORD=Passw0rd_ -e MYSQL_USER=demouser -e MYSQL_DATA
 
 oc new-app ubi8-openjdk-11:1.3~https://github.com/wohshon/springboot-camel-javadsl.git --name=springboot-camel --env=MYSQL_HOST=mysql
 
-curl -v  -X POST localhost:8080/api/rest/order/test-id -d @order1.xml -H "Content-type: application/xml"
+curl -v  -X POST localhost:8080/api/rest/order/test-id -d @order.xml -H "Content-type: application/xml"
 ```
 
 
