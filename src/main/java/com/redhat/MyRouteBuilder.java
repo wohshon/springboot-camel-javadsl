@@ -17,7 +17,7 @@ public class MyRouteBuilder extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        /** */
+        /** 
         ThreadPoolProfile poolProfile = new ThreadPoolProfile("masterPoolProfile");
         poolProfile.setMaxPoolSize(100);
         poolProfile.setMaxQueueSize(1000);
