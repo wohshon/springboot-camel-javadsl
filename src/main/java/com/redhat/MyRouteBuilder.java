@@ -57,7 +57,7 @@ public class MyRouteBuilder extends RouteBuilder {
         from("direct:spiltOrderItems")
             .split().tokenizeXML("orderItems")
             .streaming()
-            .threads(20)
+            .threads(10)
             .to("direct:saveOrderItems");
 
         from("direct:saveOrderItems")
