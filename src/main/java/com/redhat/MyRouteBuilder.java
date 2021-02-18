@@ -21,7 +21,7 @@ public class MyRouteBuilder extends RouteBuilder {
         ThreadPoolProfile poolProfile = new ThreadPoolProfile("masterPoolProfile");
         poolProfile.setMaxPoolSize(100);
         poolProfile.setMaxQueueSize(1000);
-        poolProfile.setPoolSize(15);
+        poolProfile.setPoolSize(40);
         poolProfile.setKeepAliveTime(1L);
         poolProfile.setTimeUnit(TimeUnit.MINUTES);
         getContext().getExecutorServiceManager().setDefaultThreadPoolProfile(poolProfile);
@@ -57,7 +57,7 @@ public class MyRouteBuilder extends RouteBuilder {
         from("direct:spiltOrderItems")
             .split().tokenizeXML("orderItems")
             .streaming()
-            .threads(10)
+            .threads(20)
             .to("direct:saveOrderItems");
 
         from("direct:saveOrderItems")
