@@ -19,9 +19,9 @@ public class MyRouteBuilder extends RouteBuilder {
     public void configure() throws Exception {
         /** */
         ThreadPoolProfile poolProfile = new ThreadPoolProfile("masterPoolProfile");
-        poolProfile.setMaxPoolSize(100);
+        poolProfile.setMaxPoolSize(25);
         poolProfile.setMaxQueueSize(1000);
-        poolProfile.setPoolSize(40);
+        poolProfile.setPoolSize(12);
         poolProfile.setKeepAliveTime(1L);
         poolProfile.setTimeUnit(TimeUnit.MINUTES);
         getContext().getExecutorServiceManager().setDefaultThreadPoolProfile(poolProfile);
